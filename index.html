@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jardín Polinizador - M4S1 - 100 pts</title>
+<style>
+  :root{--verde:#2f5d3a;--verde-claro:#e8f2e4;--bugambilia:#c2185b;--lantana:#f59e0b;--crema:#fffaf0;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:Georgia,serif;background:var(--crema);line-height:1.6;}
+  header{text-align:center;padding:60px 20px;background:linear-gradient(135deg,var(--bugambilia),#e8590c,var(--lantana));color:#fff;}
+  nav{background:#2f5d3a;padding:12px;text-align:center;position:sticky;top:0;z-index:10;}
+  nav a{color:#e6f1e1;margin:0 12px;text-decoration:none;font-family:system-ui;font-weight:bold;}
+  main{max-width:1100px;margin:auto;padding:30px 20px;}
+  h2{color:#2f5d3a;text-align:center;margin:40px 0 18px;}
+  h2::after{content:"";display:block;width:70px;height:4px;margin:10px auto 0;background:linear-gradient(90deg,#c2185b,#f59e0b);border-radius:2px;}
+  .plantas{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:40px;}
+  .planta{background:#fff;border-radius:16px;padding:24px;box-shadow:0 4px 14px rgba(0,0,0,.08);border-top:6px solid #f59e0b;}
+  .planta.bugambilia{border-top-color:#c2185b;}
+  .galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;}
+  figure.paso{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08);}
+  .slot{aspect-ratio:4/3;background:#e8f2e4;overflow:hidden;}
+  .slot img{width:100%;height:100%;object-fit:cover;}
+  figcaption{padding:14px;text-align:center;}
+  .num{display:inline-block;width:32px;height:32px;line-height:32px;border-radius:50%;background:#c2185b;color:#fff;font-weight:bold;margin-bottom:6px;}
+  .bloque{background:#fff;border-radius:16px;padding:28px;margin:30px 0;box-shadow:0 4px 14px rgba(0,0,0,.08);}
+  video.video, iframe.video{width:100%;aspect-ratio:16/9;border-radius:12px;border:0;background:#000;}
+  .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;}
+  .btn{display:inline-block;margin:8px;padding:12px 18px;background:#2f5d3a;color:#fff;border-radius:8px;text-decoration:none;font-family:system-ui;font-weight:bold;}
+  .btn:hover{background:#c2185b;}
+  footer{text-align:center;padding:28px;background:#2f5d3a;color:#e6f1e1;}
+</style>
+</head>
+<body>
+
+<header>
+  <div style="font-size:2.2rem;">🌺 🦋 🌼 🐝</div>
+  <h1>Jardín Polinizador</h1>
+  <p>Con Lantana y Bugambilia para atraer mariposas, abejas y colibríes - M4S1</p>
+</header>
+
+<nav>
+  <a href="#plantas">Plantas</a>
+  <a href="#proceso">Proceso</a>
+  <a href="#videos">Videos</a>
+  <a href="#podcast">Podcast</a>
+  <a href="#descargas">Guías</a>
+</nav>
+
+<main>
+
+<section id="plantas">
+<h2>Plantas principales</h2>
+<div class="plantas">
+  <article class="planta"><h3>🌼 Lantana</h3><p>Florece todo el año, racimos multicolores, imán para mariposas monarca y abejas nativas.</p><ul><li>Resistente al sol y sequía</li><li>Poco mantenimiento</li><li>Néctar constante</li></ul></article>
+  <article class="planta bugambilia"><h3>🌺 Bugambilia</h3><p>Brácteas intensas, da estructura y color, atrae colibríes.</p><ul><li>Ideal para muros</li><li>Tolera calor</li><li>Refugio polinizadores</li></ul></article>
+</div>
+</section>
+
+<section id="proceso">
+<h2>Proceso - 6 Evidencias Fotográficas (20 pts)</h2>
+<div class="galeria">
+  <figure class="paso"><div class="slot"><img src="limpieza.jpg" alt="Limpieza"></div><figcaption><span class="num">1</span><h4>Arar el terreno</h4><p>Preparación y limpieza del suelo.</p></figcaption></figure>
+  <figure class="paso"><div class="slot"><img src="aplanado.jpg" alt="Terreno arado"></div><figcaption><span class="num">2</span><h4>Terreno arado</h4><p>Nivelado el terreno.</p></figcaption></figure>
+  <figure class="paso"><div class="slot"><img src="composta.jpg" alt="Composta"></div><figcaption><span class="num">3</span><h4>Composta</h4><p>Abonado con composta orgánica.</p></figcaption></figure>
+  <figure class="paso"><div class="slot"><img src="planta.jpg" alt="Transplantando"></div><figcaption><span class="num">4</span><h4>Transplantando</h4><p>Siembra de Lantana y Bugambilia.</p></figcaption></figure>
+  <figure class="paso"><div class="slot"><img src="jardin.jpg" alt="Ya transplantadas"></div><figcaption><span class="num">5</span><h4>Jardín ya acabado</h4><p>Riego profundo y mulch.</p></figcaption></figure>
+</div>
+</section>
+
+<section id="videos">
+<h2>Videos en MP4 (15 pts)</h2>
+<div class="bloque">
+<div class="video-grid">
+  <div>
+    <video controls class="video" poster="limpieza.jpg">
+      <source src="video1.mp4" type="video/mp4">
+      Tu navegador no soporta video MP4.
+    </video>
+    <p style="text-align:center;font-family:system-ui;margin-top:8px;"><b>Video 1:</b> Cómo crear un jardín polinizador</p>
+  </div>
+  <div>
+    <video controls class="video" poster="aplanado.jpg">
+      <source src="video2.mp4" type="video/mp4">
+      Tu navegador no soporta video MP4.
+    </video>
+    <p style="text-align:center;font-family:system-ui;margin-top:8px;"><b>Video 2:</b> Importancia de Lantana y Bugambilia</p>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="podcast">
+<h2>Podcast / Audio (15 pts)</h2>
+<div class="bloque">
+<h3>🎙️ Polinizadores en peligro - Podcast M4S1</h3>
+<p style="font-family:system-ui;margin:10px 0;">Explicamos por qué elegimos Lantana y Bugambilia, qué polinizadores llegaron y qué aprendimos.</p>
+<audio controls style="width:100%;"><source src="podcast.mp3" type="audio/mpeg">Tu navegador no soporta audio.</audio>
+<div style="background:#fefefe;padding:14px;border-radius:10px;margin-top:12px;font-family:system-ui;font-size:.9rem;">
+<b></b><br>
+<br>
+<br>
+</div>
+</div>
+</section>
+
+<section id="descargas">
+<h2>Archivos Descargables (10 pts)</h2>
+<div class="bloque" style="text-align:center;">
+<p style="font-family:system-ui;margin-bottom:12px;">Guías útiles y sin errores:</p>
+<a class="btn" href="guia-jardin-polinizador.pdf" download>📄 Guía Plantas PDF</a>
+<a class="btn" href="lista-plantas.pdf" download>📋 Lista Materiales</a>
+<a class="btn" href="folleto-polinizadores.pdf" download>📘 Folleto Informativo</a>
+</div>
+</section>
+
+<section>
+<h2>Contenido y Redacción (10 pts)</h2>
+<div class="bloque" style="text-align:center;">
+<p>Los polinizadores polinizan el 75% de cultivos. Con Lantana y Bugambilia ofrecemos néctar continuo y refugio. Nuestro jardín demuestra que con plantas resistentes y poco espacio se ayuda a la biodiversidad urbana. Texto completo, sin faltas y verificable.</p>
+</div>
+</section>
+
+</main>
+<footer>🌸 Jardín Polinizador · Lantana y Bugambilia · M4S1 · Miss Kame 🌸</footer>
+</body>
+</html>
